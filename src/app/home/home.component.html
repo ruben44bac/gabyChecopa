@@ -1,0 +1,186 @@
+<div class="wrapper">
+    <div class="page-header section-dark" [style.background-image]="'url('+ fondoActual +')'">
+        <div class="filter"></div>
+        <div class="content-center">
+            <div class="container">
+                <div class="title-brand">
+                    <div class="angular-logo">
+                        <img src="assets/img/image3.png" alt="">
+                    </div>
+                </div>
+
+                <h2 class="presentation-subtitle text-center">Makeup, nails & lashes</h2>
+            </div>
+        </div>
+        <div class="moving-clouds"></div>
+
+    </div>
+    <div class="main">
+        <div class="section section-dark section-nucleo-icons">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto text-center">
+                        <h2 class="title">Gaby Checopa</h2>
+                        <p class="description">Mi nombre es Gabriela Pacheco y trabajo como maquilladora
+                            profesional en México. Desde muy pequeña me
+                            sentí atraída por el mundo de la belleza y del maquillaje profesional,
+                            por lo que tomé la decisión de estudiar esta carrera, formarme para ser
+                            la mejor maquilladora posible y así poder vivir de lo que es mi pasión
+                            sin lugar a dudas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section section-dark section-nucleo-icons" id="section2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <h2 class="title">Social</h2><br />
+                        <p class="description">
+                            FALTA
+                        </p><br />
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+
+                        <ngx-gallery [options]="galleryOptions" [images]="galleryImages_1"></ngx-gallery>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto text-center">
+                        <h2 class="title">Novias</h2>
+                        <p class="description">Texto de novias.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 download-area ml-auto mr-auto">
+                        <ngx-gallery [options]="galleryOptions" [images]="galleryImages_2"></ngx-gallery>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section-dark section-nucleo-icons" id="section2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <h2 class="title">XV Años</h2><br />
+                        <div class="icons-container">
+                            <i class="nc-icon nc-time-alarm"></i>
+                            <i class="nc-icon nc-atom"></i>
+                            <i class="nc-icon nc-camera-compact"></i>
+                            <i class="nc-icon nc-watch-time"></i>
+                            <i class="nc-icon nc-key-25"></i>
+                            <i class="nc-icon nc-diamond"></i>
+                            <i class="nc-icon nc-user-run"></i>
+                            <i class="nc-icon nc-layout-11"></i>
+                            <i class="nc-icon nc-badge"></i>
+                            <i class="nc-icon nc-bulb-63"></i>
+                            <i class="nc-icon nc-favourite-28"></i>
+                            <i class="nc-icon nc-planet"></i>
+                            <i class="nc-icon nc-tie-bow"></i>
+                            <i class="nc-icon nc-zoom-split"></i>
+                            <i class="nc-icon nc-cloud-download-93"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <ngx-gallery [options]="galleryOptions" [images]="galleryImages_3"></ngx-gallery>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="img-comp-container">
+                            <div class="img-comp-img">
+                                <img src="assets/img/k2.png" class="imagen-cambio">
+                            </div>
+                            <div class="img-comp-img img-comp-overlay">
+                                <img src="assets/img/k1.png" class="imagen-cambio">
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="img-comp-container">
+                            <div class="img-comp-img">
+                                <img src="assets/img/k2.png" class="imagen-cambio">
+                            </div>
+                            <div class="img-comp-img img-comp-overlay">
+                                <img src="assets/img/k1.png" class="imagen-cambio">
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section section-image section-login" style="background-image: url('assets/img/fondo11.JPG');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 ml-auto mr-auto">
+                        <div class="card card-register">
+                            <h3 class="title">Contacto</h3>
+                            <form class="register-form">
+                                <label>Nombre</label>
+                                <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="nc-icon nc-user-run"></i>
+                                        </span>
+                                    </div>
+
+                                    <input type="text" class="form-control" placeholder="Nombre" (focus)="focus=true"
+                                        (blur)="focus=false">
+                                </div>
+
+                                <label>Correo</label>
+                                <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="nc-icon nc-email-85"></i>
+                                        </span>
+                                    </div>
+
+                                    <input type="text" class="form-control" placeholder="Correo" (focus)="focus=true"
+                                        (blur)="focus=false">
+                                </div>
+
+                                <label>Teléfono</label>
+                                <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus1===true}">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="nc-icon nc-mobile"></i>
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Teléfono" (focus)="focus1=true"
+                                        (blur)="focus1=false">
+                                </div>
+                                <button class="btn btn-danger btn-block btn-round">Contactar</button>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

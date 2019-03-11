@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500" (scroll)="doSomethingOnScroll($event)">
+    <div class="container">
+        <div class="navbar-translate">
+            <img class="navbar-brand navbar-transparent" src="assets/img/image2.png" width="150px">
+            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item" >
+                    <a class="navbar-brand" href="https://www.instagram.com/CreativeTimOfficial">
+                        Social
+                    </a>
+                </li>
+                <li class="nav-item" >
+                    <a class="navbar-brand" href="#section2" >
+                        Novias
+                    </a>
+                </li>
+                <li class="nav-item" >
+                    <a class="navbar-brand" href="https://www.instagram.com/CreativeTimOfficial">
+                        XV años
+                    </a>
+                </li>
+                <li class="nav-item" >
+                    <a class="navbar-brand" href="https://www.instagram.com/CreativeTimOfficial" >
+                        Uñas
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/gabychecopamakeup/" target="_blank">
+                        <img src="assets/img/facebook.png" width="30px">
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/gabychecopa/" target="_blank">
+                        <img src="assets/img/instagram.png" width="30px">
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isHome()">
+                    <a [routerLink]="['/home']" *ngIf="!isDocumentation()" class="nav-link"><i class="nc-icon nc-layout-11"></i>Components</a>
+                    <a [routerLink]="['/home']" *ngIf="isDocumentation()" class="nav-link">Back to Kit</a>
+                </li>
+                <li class="nav-item" *ngIf="isDocumentation()">
+                    <a href="https://github.com/creativetimofficial/paper-kit-2-angular/issues?ref=pk2-free-local" target="_blank" class="nav-link">Have an issue</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
